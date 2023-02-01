@@ -1,0 +1,29 @@
+@media(min-width: 769px) {
+  .login > form > span:hover {
+    cursor: pointer;
+    color: var(--white);
+  }
+
+  .login > form > button:hover {
+    background-color: var(--darkBlue);
+  }
+
+  .login > form > button:hover > span{
+    color:  var(--white);
+  }
+  
+  .modal_content > form > button:hover {
+    background-color: var(--darkBlue);
+
+  }
+  
+  .modal_content > form > button:hover > span {
+    color: var(--white);
+  }
+
+  .modal_header > button:hover {
+    cursor: pointer;
+    background-color: var(--darkBlue);
+    color: var(--white);
+  }
+}

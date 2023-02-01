@@ -1,0 +1,131 @@
+.hidden {
+  display: none;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  animation: showModal 500ms;
+}
+
+.modal_content{
+  width: 80%;
+  height: 60%;
+  margin: auto auto;
+  background-color: var(--lightBlue);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.modal_header{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal_header > h3 {
+  width: 120px;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.modal_header > button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.modal_content > p {  
+  margin: 25px auto;
+  font-size: 1rem;
+  width: 90%;
+}
+
+.modal_content > form {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal_content > form > p {
+  color: var(--white);
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+.modal_content > form > input {
+  background-color: var(--white);
+  width: 95%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal_content > form > button {
+  background-color: var(--white);
+  align-self: center;
+  width: 70%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.modal_content > form > button > span {
+  color: var(--darkBlue);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+@media(min-width: 769px) {
+
+  .modal_content{
+    width: 60%;
+    height: 80%;
+  }
+
+  .modal_header > h3 {
+    width: 170px;
+    font-size: 2rem;
+  }
+
+  .modal_content > p {  
+    margin-top: 50px;
+    font-size: 1.3rem;
+    width: 80%;
+  }
+
+  .modal_content > form {
+    width: 80%;
+  }
+
+  .modal_content > form > input {
+    height: 45px;
+    margin-bottom: 30px;
+  }
+
+  .modal_content > form > button {
+    width: 60%;
+    height: 50px;
+  }
+
+}
+
+@keyframes showModal {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

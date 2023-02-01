@@ -1,0 +1,174 @@
+:root {
+  --background: #04082B;
+  --darkBlue:   #131B64;
+  --lightBlue:  #6D76CB;
+  --white:      #F1FAEE;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background);
+  display: flex;
+}
+
+body > section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  background-color: var(--darkBlue);
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0 auto;
+}
+
+.logo > div > img {
+  width: 60px;
+  height: 60px;
+}
+
+.logo > div > h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-left: 10px;
+  color: var(--white);
+}
+
+.logo > h2 {
+  width: 70%;
+  color: var(--white);
+  align-self: center;
+  margin: 25px auto 0 auto;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.login {
+  background-color: var(--lightBlue);
+  width: 100%;
+  height: 60%;
+}
+
+.login > h3 {
+  color: var(--white);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 30px 0 20px 25px;
+}
+
+.login > form {
+  width: 80%;
+  height: 230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.login > form > p {
+  color: var(--white);
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+.login > form > input {
+  background-color: var(--white);
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.login > form > span {
+  color: var(--darkBlue);
+  font-size: 0.8rem;
+  align-self: flex-end;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.login > form > button {
+  background-color: var(--white);
+  margin: 0 auto;
+  width: 70%;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+}
+
+.login > form > button > span {
+  color: var(--darkBlue);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@media(min-width: 769px) {
+
+  body {
+    align-items: center;
+    justify-content: center;
+  }
+
+  body > section {
+    width: 75%;
+    height: 75%;
+    flex-direction: row;   
+  }
+
+  .logo {
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .logo > div {
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .logo > div > img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .logo > div > h1 {
+    font-size: 2.3rem;
+  }
+
+  .logo > h2 {
+    font-size: 1.6rem;
+  }
+
+  .login {
+    width: 55%;
+    height: 100%;
+  }
+
+  .login > h3 {
+    margin: 50px 0 0 40px;
+    font-size: 2rem;
+  }
+
+  .login > form {
+    height: 350px;
+    justify-content: center;
+  }
+
+  .login > form > span { 
+    margin-bottom: 50px;
+  }
+  
+}
